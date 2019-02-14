@@ -1,0 +1,15 @@
+ #encondig: utf-8
+import mysql.connector 
+
+db = mysql.connector.connect(host = "127.0.0.1", user = "root", password = "1234", database = "mysql")
+
+cursor = db.cursor() 
+
+cursor.execute("INSERT INTO `crud`.`crud` (`nome`, `login`, ` senha`) VALUES ('Adriano Soares', 'adriano', 'ad1234');INSERT INTO `crud`.`crud` (`nome`, `login`, ` senha`) VALUES ('Andre Soares', 'andre', 'an1234');")
+db.comit()
+#confirma e executa
+ 
+
+db.close() 
+
+ 
